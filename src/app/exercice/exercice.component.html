@@ -1,0 +1,90 @@
+<div class="row my-3">
+    <div class="col-12 col-md-8 offset-md-2 text-white bg-dark rounded p-3">
+        <h5 class="display-5 text-muted">Exercice Pipes</h5>
+        <hr>
+        <h6 class="display-6"> {{ shortStr }} </h6>
+        <hr>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Camel Pipe</b>
+                </div>
+                <div>
+                    <b>{{ shortStr | camelPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Trim Pipe</b>
+                </div>
+                <div>
+                    <b>{{ shortStr | trimPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Camel Pipe puis Trim Pipe</b>
+                </div>
+                <div>
+                    <b>{{ shortStr | camelPipe | trimPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Trim Pipe puis Camel Pipe</b>
+                </div>
+                <div>
+                    <b>{{ shortStr | trimPipe | camelPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <h6 class="display-6"> {{ longStr }} </h6>
+        <hr>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Camel Pipe</b>
+                </div>
+                <div>
+                    <b>{{ longStr | camelPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Trim Pipe</b>
+                </div>
+                <div>
+                    <b>{{ longStr | trimPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Camel Pipe puis Trim Pipe</b>
+                </div>
+                <div>
+                    <b>{{ longStr | camelPipe | trimPipe }}</b>
+                </div>
+            </div>
+        </div>
+        <div class="my-2 alert border p-3 alert-success">
+            <div class="d-flex">
+                <div class="me-auto">
+                    <b>Trim Pipe puis Camel Pipe</b>
+                </div>
+                <div>
+                    <b>{{ longStr | trimPipe | camelPipe }}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
